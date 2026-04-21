@@ -1,0 +1,26 @@
+:root{
+    --bg-color: #e878ff;
+    --bg-form-color: #83ff8d;
+}
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+}
+
+.list--container {
+    background-color: var(--bg-form-color);
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e3879;
+}
