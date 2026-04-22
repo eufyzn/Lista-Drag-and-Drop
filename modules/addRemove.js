@@ -16,3 +16,11 @@ function createRemoveButton() {
 
     return novoBotao;
 }
+
+function createNewItem() {
+    const novoItem = document.createElement('li');
+    novoItem.contentEditable = true;
+    novoItem.innerHTML = 'Clique para editar';
+
+    return novoItem;
+}
