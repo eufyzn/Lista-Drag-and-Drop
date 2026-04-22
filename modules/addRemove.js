@@ -1,3 +1,10 @@
+import {
+    onDragOver,
+    onDragStart,
+    onDrop
+} from "./dragDrop.js";
+
+
 function addItem() {
     const novoBotao = createRemoveButton();
     const novoItem = createNewItem();
