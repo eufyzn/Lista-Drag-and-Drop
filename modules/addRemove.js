@@ -24,3 +24,18 @@ function createNewItem() {
 
     return novoItem;
 }
+
+function buildNewItemContainer(elements) {
+    const novoContainer = document.createElement('div');
+    novoContainer.classList.add('item--container');
+    novoContainer.appendChild(elements.item);
+    novoContainer.appendChild(elements.botao);
+
+    novoContainer.id = `c-${Date.now()}`;
+    novoContainer.draggable = true;
+    novoContainer.addEventListener('dragstart', onDragStart);
+    novoContainer.addEventListener('dragover', onDragOver);
+    novoContainer.addEventListener('drop', onDrop);
+
+    return novoContainer;
+}
