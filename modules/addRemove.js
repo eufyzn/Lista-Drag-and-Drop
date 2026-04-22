@@ -39,3 +39,11 @@ function buildNewItemContainer(elements) {
 
     return novoContainer;
 }
+
+function removerItem(event) {
+    const itemRemovido = event.target.parentNode;
+    const lista = document.getElementById("lista");
+    lista.removeChild(itemRemovido);
+}
+
+export { addItem };
