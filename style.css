@@ -24,3 +24,12 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 15px #6e3879;
 }
+
+.item--container {
+    display: flex;
+    gap: 8px;
+}
+
+ul > li > button {
+  margin-left: 8px;
+}
